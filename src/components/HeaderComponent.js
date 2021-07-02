@@ -40,18 +40,26 @@ class Header extends Component {
 						<NavbarToggler onClick={this.toggleNav} />
 						<Collapse isOpen={this.state.isNavOpen} navbar>
 							<Nav navbar>
-								<NavLink className="nav-link" to="/home">
-									<i className="fa fa-home fa-lg" /> Home
-								</NavLink>
-								<NavLink className="nav-link" to="/directory">
-									<i className="fa fa-list fa-lg" /> Directory
-								</NavLink>
-								<NavLink className="nav-link" to="/aboutus">
-									<i className="fa fa-info fa-lg" /> About Us
-								</NavLink>
-								<NavLink className="nav-link" to="/contactus">
-									<i className="fa fa-address-card fa-lg" /> Contact Us
-								</NavLink>
+								<NavItem>
+									<NavLink className="nav-link" to="/home">
+										<i className="fa fa-home fa-lg" /> Home
+									</NavLink>
+								</NavItem>
+								<NavItem>
+									<NavLink className="nav-link" to="/directory">
+										<i className="fa fa-list fa-lg" /> Directory
+									</NavLink>
+								</NavItem>
+								<NavItem>
+									<NavLink className="nav-link" to="/aboutus">
+										<i className="fa fa-info fa-lg" /> About
+									</NavLink>
+								</NavItem>
+								<NavItem>
+									<NavLink className="nav-link" to="/contactus">
+										<i className="fa fa-address-card fa-lg" /> Contact Us
+									</NavLink>
+								</NavItem>
 							</Nav>
 						</Collapse>
 					</div>
