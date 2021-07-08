@@ -15,20 +15,15 @@ class Contact extends Component {
 			agree: false,
 			contactType: 'By Phone',
 			feedback: '',
+			touched: {
+				firstName: false,
+				lastName: false,
+				phoneNum: false,
+				email: false,
+			},
 		};
 
-		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-
-	handleInputChange(event) {
-		const target = event.target;
-		const name = target.name;
-		const value = target.type === 'checkbox' ? target.checked : target.value;
-
-		this.setState({
-			[name]: value,
-		});
 	}
 
 	handleSubmit(values) {
